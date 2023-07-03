@@ -1,0 +1,103 @@
+{"nonVeg":[
+  {
+    "name": "Mutton_Biriyani",
+    "price": 299,
+    "image": "https://static.toiimg.com/thumb/52568357.cms?imgsize=158081&width=800&height=800"
+  },
+  {
+    "name": "Chicken_Biriyani",
+    "price": 199,
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNO97FbHTCFtvxLuqzsHpJaUQyTFJjKNWyDw&usqp=CAU"
+  },
+  {
+    "name": "Egg_Biriyani",
+    "price": 99,
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTCijjY29wyxeA_12H9O2FbspP4eEio_O07dA&usqp=CAU"
+  },
+  {
+    "name": "Biriyani_rice_Kushka",
+    "price": 129,
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-p8FMZFZHObYsjPZqItsP8M33TJeQc81xyA&usqp=CAU"
+  },
+  {
+    "name": "Chicken_Fried_Rice",
+    "price": 149,
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQT_1kAqcw6FkFhkHOOQuQXSCfY5ykbHlE8yA&usqp=CAU"
+  },
+  {
+    "name": "Egg_Fried_Rice",
+    "price": 99,
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJYcrVsyTmqVXDm-drE9OCZg2I2lspWe1o5A&usqp=CAU"
+  },
+  {
+    "name": "Chicken_Tandoori",
+    "price": 280,
+    "image": "https://media.istockphoto.com/id/1058029220/photo/tandoori-chicken.jpg?b=1&s=170667a&w=0&k=20&c=jf9YF2I8soWDirSZRn5j5axU5VIUdAGPXGzYiZ4KMhY="
+  },
+  {
+    "name": "Chicken_Tikka",
+    "price": 140,
+    "image": "https://media.istockphoto.com/id/1058029220/photo/tandoori-chicken.jpg?b=1&s=170667a&w=0&k=20&c=jf9YF2I8soWDirSZRn5j5axU5VIUdAGPXGzYiZ4KMhY="
+  },
+  {
+    "name": "Andhra_Chicken_Curry",
+    "price": 120,
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpLREdYRCZX9BnlOTlxZXcwjMM_BJNgI3-7w&usqp=CAU"
+  },
+  {
+    "name": "Mutton_Kholapuri",
+    "price": 169,
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3RK8xXdAHhw6IhGGO6bO4bPe839RwAR3rt7pfSeOEHFumO5maqN5p6iiksH0wlNgH6yc&usqp=CAU"
+  }],
+
+  "veg":[{
+    "name": "Masala_Dosa",
+    "price": 120,
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLySiNDlUsUOPodg8oFjvy3z__aX9yz-4dNA&usqp=CAU"
+  },
+  {
+    "name": "Idli_vada",
+    "price": 79,
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTnmrXAk_RNf7ebXzsO_Jc6rO3Wa9gc4urhxw&usqp=CAU"
+  },
+  {
+    "name": "Poori",
+    "price": 49,
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtIJmSLey2uzN4Bf2p5g6egJm6colLYcsXZA&usqp=CAU"
+  },
+  {
+    "name": "Bisibelebath",
+    "price": 49,
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWxmZFJmendI9Zv0zUsd_XUiKRIVk9A77FSA&usqp=CAU"
+  },
+  {
+    "name": "Upma",
+    "price": 29,
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQhngk05xu1gLnQLfmEgFxEZJShHdPWghN-7w&usqp=CAU"
+  },
+  {
+    "name": "Gobi_Manchrian",
+    "price": 149,
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBX_rHVtP4cNYG1AgaD9yZRhfu67klW76bZw&usqp=CAU"
+  },
+  {
+    "name": "Mushroom_Manchrian",
+    "price": 179,
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRG9dxs0gILzrpivUBaQ1lRKqR81y2EUgYeMA&usqp=CAU"
+  },
+  {
+    "name": "Paneer_Biriyani",
+    "price": 249,
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRmTcEz3Ja0tbv79eqa0pm9TWzsLOtfW1gSlg&usqp=CAU"
+  },
+  {
+    "name": "Hydrabadi_Biriyani",
+    "price": 249,
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRmTcEz3Ja0tbv79eqa0pm9TWzsLOtfW1gSlg&usqp=CAU"
+  },
+  {
+    "name": "Cheese_Dosa",
+    "price": 149,
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGd4AWn8BLpMcV1aa_zhoJy0XlLM6qCVIh7Q&usqp=CAU"
+  }
+]}

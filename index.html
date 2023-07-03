@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+  </head>
+  <body>
+    <section id="main-block">
+      <article id="display-block">
+        <div class="info-block">
+          <form class="customer-info" method="post">
+            <h2>Customer-Info</h2>
+            <div>
+              <input
+                type="text"
+                name="Name"
+                class="info-field"
+                id="" required
+                placeholder="Enter your Name"
+              />
+            </div>
+            <div>
+              <input
+                type="email"
+                name="Email"
+                class="info-field"
+                id="" required
+                placeholder="Enter your Email"
+              />
+            </div>
+            <div>
+              <input
+                type="tel"
+                name="Phone"
+                class="info-field"
+                id="" required
+                placeholder="Enter your Phone Number"
+              />
+            </div>
+            <div>
+              <input
+                list="city"
+                name="City"
+                class="info-field"
+                id="city-list" required
+                placeholder="Select Your city"
+              />
+              <datalist id="city">
+                <option value="Mandya">Mandya</option>
+                <option value="Mysore">Mysore</option>
+                <option value="Melavall">Melavalli</option>
+                <option value="Maddur">Maddur</option>
+                <option value="Chamarajanagar">Chamarajanagar</option>
+                <option value="Kollegala">Kollegala</option>
+              </datalist>
+            </div>
+            <div><button>Your menu</button></div>
+          </form>
+          <ul id="summary">
+
+          </ul>
+        </div>
+        <div class="show-case">
+          <div class="category">
+            <b>&nbsp; <i class="fa-solid fa-leaf"></i> Veg</b>&nbsp<input type="radio" name="category" id="" value="veg"/>
+           <b>&nbsp; <i class="fa-solid fa-drumstick-bite"></i> Non-Veg</b><input type="radio" name="category" id="" value ="nonVeg"/>
+           <span id="wle">welcome</span>
+          </div>
+          <table id="veg">
+            <thead>
+              <tr>
+              <td>Sl No</td>
+              <td>Image</td>
+              <td>Food</td>
+              <td>Price</td>
+              <td>Qty</td>
+              <td>Total</td>
+            </tr>
+            </thead>
+            <tbody><tr>
+      <td>1</td>
+        <td><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLySiNDlUsUOPodg8oFjvy3z__aX9yz-4dNA&amp;usqp=CAU" alt="" width="70px" height="42px" style="border-radius:50%;"></td>
+        <td>Masala_Dosa</td>
+        <td class="price">120</td>
+        <td class="qty"><button onclick="dec(this)">-</button><b>1</b><button onclick="inc(this)">+</button><span>Add</span></td>
+        <td class="total"></td>
+        </tr><tr>
+      <td>2</td>
+        <td><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTnmrXAk_RNf7ebXzsO_Jc6rO3Wa9gc4urhxw&amp;usqp=CAU" alt="" width="70px" height="42px" style="border-radius:50%;"></td>
+        <td>Idli_vada</td>
+        <td class="price">79</td>
+        <td class="qty"><button onclick="dec(this)">-</button><b>1</b><button onclick="inc(this)">+</button><span>Add</span></td>
+        <td class="total"></td>
+        </tr><tr>
+      <td>3</td>
+        <td><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtIJmSLey2uzN4Bf2p5g6egJm6colLYcsXZA&amp;usqp=CAU" alt="" width="70px" height="42px" style="border-radius:50%;"></td>
+        <td>Poori</td>
+        <td class="price">49</td>
+        <td class="qty"><button onclick="dec(this)">-</button><b>1</b><button onclick="inc(this)">+</button><span>Add</span></td>
+        <td class="total"></td>
+        </tr><tr>
+      <td>4</td>
+        <td><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWxmZFJmendI9Zv0zUsd_XUiKRIVk9A77FSA&amp;usqp=CAU" alt="" width="70px" height="42px" style="border-radius:50%;"></td>
+        <td>Bisibelebath</td>
+        <td class="price">49</td>
+        <td class="qty"><button onclick="dec(this)">-</button><b>1</b><button onclick="inc(this)">+</button><span>Add</span></td>
+        <td class="total"></td>
+        </tr><tr>
+      <td>5</td>
+        <td><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQhngk05xu1gLnQLfmEgFxEZJShHdPWghN-7w&amp;usqp=CAU" alt="" width="70px" height="42px" style="border-radius:50%;"></td>
+        <td>Upma</td>
+        <td class="price">29</td>
+        <td class="qty"><button onclick="dec(this)">-</button><b>1</b><button onclick="inc(this)">+</button><span>Add</span></td>
+        <td class="total"></td>
+        </tr><tr>
+      <td>6</td>
+        <td><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBX_rHVtP4cNYG1AgaD9yZRhfu67klW76bZw&amp;usqp=CAU" alt="" width="70px" height="42px" style="border-radius:50%;"></td>
+        <td>Gobi_Manchrian</td>
+        <td class="price">149</td>
+        <td class="qty"><button onclick="dec(this)">-</button><b>1</b><button onclick="inc(this)">+</button><span>Add</span></td>
+        <td class="total"></td>
+        </tr><tr>
+      <td>7</td>
+        <td><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRG9dxs0gILzrpivUBaQ1lRKqR81y2EUgYeMA&amp;usqp=CAU" alt="" width="70px" height="42px" style="border-radius:50%;"></td>
+        <td>Mushroom_Manchrian</td>
+        <td class="price">179</td>
+        <td class="qty"><button onclick="dec(this)">-</button><b>1</b><button onclick="inc(this)">+</button><span>Add</span></td>
+        <td class="total"></td>
+        </tr><tr>
+      <td>8</td>
+        <td><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRmTcEz3Ja0tbv79eqa0pm9TWzsLOtfW1gSlg&amp;usqp=CAU" alt="" width="70px" height="42px" style="border-radius:50%;"></td>
+        <td>Paneer_Biriyani</td>
+        <td class="price">249</td>
+        <td class="qty"><button onclick="dec(this)">-</button><b>1</b><button onclick="inc(this)">+</button><span>Add</span></td>
+        <td class="total"></td>
+        </tr><tr>
+      <td>9</td>
+        <td><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRmTcEz3Ja0tbv79eqa0pm9TWzsLOtfW1gSlg&amp;usqp=CAU" alt="" width="70px" height="42px" style="border-radius:50%;"></td>
+        <td>Hydrabadi_Biriyani</td>
+        <td class="price">249</td>
+        <td class="qty"><button onclick="dec(this)">-</button><b>1</b><button onclick="inc(this)">+</button><span>Add</span></td>
+        <td class="total"></td>
+        </tr><tr>
+      <td>10</td>
+        <td><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGd4AWn8BLpMcV1aa_zhoJy0XlLM6qCVIh7Q&amp;usqp=CAU" alt="" width="70px" height="42px" style="border-radius:50%;"></td>
+        <td>Cheese_Dosa</td>
+        <td class="price">149</td>
+        <td class="qty"><button onclick="dec(this)">-</button><b>1</b><button onclick="inc(this)">+</button><span>Add</span></td>
+        <td class="total"></td>
+        </tr></tbody>
+      <tfoot>
+          <tr>
+            <td colspan="5" style="text-align: right; font-size: x-large;font-weight: 800;">GrandTotal</td>
+              <td id="total" style="text-align: right; font-size: x-large;font-weight: 800;"></td>
+            </tr>
+            </tfoot>
+          </table>
+        <table id="non-veg">
+            <thead>
+              <tr>
+              <td>Sl No</td>
+              <td>Image</td>
+              <td>Food</td>
+              <td>Price</td>
+              <td>Qty</td>
+              <td>Total</td>
+            </tr>
+            </thead>
+          <tbody>
+            <tr>
+        <td>1</td>
+        <td><img src="https://static.toiimg.com/thumb/52568357.cms?imgsize=158081&amp;width=800&amp;height=800" alt="" width="70px" height="42px" style="border-radius:50%;"></td>
+        <td>Mutton_Biriyani</td>
+        <td class="price">299</td>
+        <td class="qty"><button onclick="dec(this)">-</button><b>1</b><button onclick="inc(this)">+</button><span>Add</span></td>
+        <td class="total"></td>
+        </tr><tr>
+        <td>2</td>
+        <td><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNO97FbHTCFtvxLuqzsHpJaUQyTFJjKNWyDw&amp;usqp=CAU" alt="" width="70px" height="42px" style="border-radius:50%;"></td>
+        <td>Chicken_Biriyani</td>
+        <td class="price">199</td>
+        <td class="qty"><button onclick="dec(this)">-</button><b>1</b><button onclick="inc(this)">+</button><span>Add</span></td>
+        <td class="total"></td>
+        </tr><tr>
+        <td>3</td>
+        <td><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTCijjY29wyxeA_12H9O2FbspP4eEio_O07dA&amp;usqp=CAU" alt="" width="70px" height="42px" style="border-radius:50%;"></td>
+        <td>Egg_Biriyani</td>
+        <td class="price">99</td>
+        <td class="qty"><button onclick="dec(this)">-</button><b>1</b><button onclick="inc(this)">+</button><span>Add</span></td>
+        <td class="total"></td>
+        </tr><tr>
+        <td>4</td>
+        <td><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-p8FMZFZHObYsjPZqItsP8M33TJeQc81xyA&amp;usqp=CAU" alt="" width="70px" height="42px" style="border-radius:50%;"></td>
+        <td>Biriyani_rice_Kushka</td>
+        <td class="price">129</td>
+        <td class="qty"><button onclick="dec(this)">-</button><b>1</b><button onclick="inc(this)">+</button><span>Add</span></td>
+        <td class="total"></td>
+        </tr><tr>
+        <td>5</td>
+        <td><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQT_1kAqcw6FkFhkHOOQuQXSCfY5ykbHlE8yA&amp;usqp=CAU" alt="" width="70px" height="42px" style="border-radius:50%;"></td>
+        <td>Chicken_Fried_Rice</td>
+        <td class="price">149</td>
+        <td class="qty"><button onclick="dec(this)">-</button><b>1</b><button onclick="inc(this)">+</button><span>Add</span></td>
+        <td class="total"></td>
+        </tr><tr>
+        <td>6</td>
+        <td><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJYcrVsyTmqVXDm-drE9OCZg2I2lspWe1o5A&amp;usqp=CAU" alt="" width="70px" height="42px" style="border-radius:50%;"></td>
+        <td>Egg_Fried_Rice</td>
+        <td class="price">99</td>
+        <td class="qty"><button onclick="dec(this)">-</button><b>1</b><button onclick="inc(this)">+</button><span>Add</span></td>
+        <td class="total"></td>
+        </tr><tr>
+        <td>7</td>
+        <td><img src="https://media.istockphoto.com/id/1058029220/photo/tandoori-chicken.jpg?b=1&amp;s=170667a&amp;w=0&amp;k=20&amp;c=jf9YF2I8soWDirSZRn5j5axU5VIUdAGPXGzYiZ4KMhY=" alt="" width="70px" height="42px" style="border-radius:50%;"></td>
+        <td>Chicken_Tandoori</td>
+        <td class="price">280</td>
+        <td class="qty"><button onclick="dec(this)">-</button><b>1</b><button onclick="inc(this)">+</button><span>Add</span></td>
+        <td class="total"></td>
+        </tr><tr>
+        <td>8</td>
+        <td><img src="https://media.istockphoto.com/id/1058029220/photo/tandoori-chicken.jpg?b=1&amp;s=170667a&amp;w=0&amp;k=20&amp;c=jf9YF2I8soWDirSZRn5j5axU5VIUdAGPXGzYiZ4KMhY=" alt="" width="70px" height="42px" style="border-radius:50%;"></td>
+        <td>Chicken_Tikka</td>
+        <td class="price">140</td>
+        <td class="qty"><button onclick="dec(this)">-</button><b>1</b><button onclick="inc(this)">+</button><span>Add</span></td>
+        <td class="total"></td>
+        </tr><tr>
+        <td>9</td>
+        <td><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpLREdYRCZX9BnlOTlxZXcwjMM_BJNgI3-7w&amp;usqp=CAU" alt="" width="70px" height="42px" style="border-radius:50%;"></td>
+        <td>Andhra_Chicken_Curry</td>
+        <td class="price">120</td>
+        <td class="qty"><button onclick="dec(this)">-</button><b>1</b><button onclick="inc(this)">+</button><span>Add</span></td>
+        <td class="total"></td>
+        </tr><tr>
+        <td>10</td>
+        <td><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3RK8xXdAHhw6IhGGO6bO4bPe839RwAR3rt7pfSeOEHFumO5maqN5p6iiksH0wlNgH6yc&amp;usqp=CAU" alt="" width="70px" height="42px" style="border-radius:50%;"></td>
+        <td>Mutton_Kholapuri</td>
+        <td class="price">169</td>
+        <td class="qty"><button onclick="dec(this)">-</button><b>1</b><button onclick="inc(this)">+</button><span>Add</span></td>
+        <td class="total"></td>
+        </tr>
+    </tbody>
+        <tfoot>
+          <tr>
+            <td colspan="5" style="text-align: right; font-size: x-large;font-weight: 800;">GrandTotal</td>
+              <td id="total" style="text-align: right; font-size: x-large;font-weight: 800; color: white;">123</td>
+            </tr>
+            </tfoot>
+  </table>
+  <aside>
+    <h1><img src="https://media4.giphy.com/media/lReVblhSRtxXtfK81w/200w.webp?cid=ecf05e47c9dt3aw6v8bxr2ey5rtgsfo2qpnp883hi4ifaz1q&rid=200w.webp&ct=g" alt="" width="80px" height="60px" style="border-radius:50%;float: left;opacity: 0.6;border: none;">Tell us Your Priority to See Menu</h1>
+  </aside>
+        </div>
+      </article>
+    </section>
+    <script src="./app.js"></script>
+  </body>
+</html>

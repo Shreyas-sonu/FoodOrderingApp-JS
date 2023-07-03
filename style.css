@@ -1,0 +1,229 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#main-block{
+    background-image: url("https://images.unsplash.com/photo-1499028344343-cd173ffc68a9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80");
+    background-size: 100%;
+    width: 100%;
+    height: max-content;
+    color: whitesmoke;
+    animation: bac;
+    animation-delay: 5s;
+    animation-iteration-count: infinite;
+    animation-duration: 50s;
+    animation-direction: alternate;
+}
+#display-block{
+    width: 95%;
+    height: 100vh;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#display-block>div:first-child{
+    flex-basis: 30%;
+    width: 100%;
+    height: inherit;
+}
+#display-block>div:last-child{
+    flex-basis: 70%;
+    width: 100%;
+    height: inherit;
+    visibility: hidden;
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.508);
+
+}
+form{
+    width: 90%;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 20px auto;
+    background-color: rgba(0, 0, 0, 0.508);
+    border: 1px ridge rgba(0, 255, 255, 0.465);
+    border-radius: 20px 0;
+}
+form>div{
+    width: 80%;
+    margin: 10px auto;
+}
+form>h2{
+    margin-left: -30%;
+}
+form button{
+    padding: 7px 15px;
+    border-radius: 1px ridge rgba(27, 27, 27, 0.641);
+    border-radius: 10px;
+    background-color:rgba(0, 255, 255, 0.465) ;
+    color: black;
+    font-weight: 700;
+}
+form button:hover{
+    cursor: pointer;
+    color: rgba(0, 255, 255, 0.465);
+    background-color: rgba(0, 0, 0, 0.641);
+    border: 2px solid rgba(0, 255, 255, 0.465);
+}
+table{
+    width: 90%;
+    margin: 10px auto;
+}
+table>thead td{
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: larger;
+    font-weight: 800;
+    color: rgba(0, 255, 255, 0.465) ;
+}
+table>thead>tr>td:first-child{
+    text-align: left;
+    padding: 0px;
+}
+table>tfoot td{
+    padding-left: 10px;
+    padding-top: 8px;
+}
+table tbody td{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+table>tbody>tr>td:first-child{
+    padding: 0;
+    width: min-content;
+}
+#veg{
+    position: absolute;
+    left: 10%;
+    top: 9%;
+    display: none;
+     width: 90%;
+    margin: 10px auto;
+}
+#non-veg{
+    position: absolute;
+    left: 10%;
+    top: 9%;
+    display: none;
+     width: 90%;
+    margin: 10px auto;
+}
+.category{
+    width: 95%;
+    margin: 20px auto;
+    display: flex;
+    align-items: center;
+}
+.category>span{
+    margin-left: 20%;
+    display: inline-block;
+    color: rgba(0, 255, 255, 0.465) ;
+    background-color: black;
+    padding: 10px;
+    border: 1px ridge rgba(0, 255, 255, 0.465) ;
+    border-radius: 20px 0;
+    font-weight: 600;
+}
+.category>b:nth-child(1){
+    color: greenyellow;
+    font-size: large;
+}
+.category>b:nth-child(3){
+    margin-left: 20px;
+    margin-right: 5px;
+    color: crimson;
+    font-size: large;
+}
+.category>input:nth-child(2){
+    accent-color: yellowGreen;
+    height: 25px;
+    padding: 10px;
+    width: 18px;
+}
+.category>input:nth-child(4){
+    accent-color: crimson;
+    height: 25px;
+    padding: 10px;
+    width: 18px;
+}
+
+/* Animation */
+@keyframes bac {
+    0%{
+    background-image:url("https://images.unsplash.com/photo-1499028344343-cd173ffc68a9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80");
+    background-size: 100% 100vh;
+    }
+    10%{
+    background-image:url("https://cdn.stocksnap.io/img-thumbs/960w/food-dessert_F6DNP46F78.jpg");
+    background-size: 100% 100vh;
+    }
+     20%{
+    background-image:url("https://cdn.stocksnap.io/img-thumbs/960w/raspberries-berry_Z6P27ZBPN2.jpg");
+    background-size: 100% 100vh;
+    } 30%{
+    background-image:url("https://cdn.stocksnap.io/img-thumbs/960w/pumpkin-autumn_AMT1NIQBIT.jpg");
+    background-size: 100% 100vh;
+    } 40%{
+    background-image:url("https://cdn.stocksnap.io/img-thumbs/960w/fruit-oranges_NKJCDSIIRB.jpg");
+    background-size: 100% 100vh;
+    } 50%{
+    background-image:url("https://cdn.stocksnap.io/img-thumbs/960w/strawberry-plant_HYBOHSMYIB.jpg");
+    background-size: 100% 100vh;
+    } 60%{
+    background-image:url("https://cdn.stocksnap.io/img-thumbs/960w/pineapple-fruit_I3QLKL6REZ.jpg");
+    background-size: 100% 100vh;
+    } 70%{
+    background-image:url("https://cdn.stocksnap.io/img-thumbs/960w/homemade-pie_TUKUBAALHJ.jpg");
+    background-size: 100% 100vh;
+    } 80%{
+    background-image:url("https://cdn.stocksnap.io/img-thumbs/960w/macaroon-cookies_LJBZONODJR.jpg");
+    background-size: 100% 100vh;
+    }
+    90%{
+    background-image:url("https://cdn.stocksnap.io/img-thumbs/960w/nature-food_AUVLL0XR1V.jpg");
+    background-size: 100% 100vh;
+    }
+    100%{
+    background-image:url("https://images.unsplash.com/photo-1499028344343-cd173ffc68a9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80");
+    background-size: 100% 100vh;
+    }
+}
+.qty{
+    position: relative;
+}
+.qty span{
+    position: absolute;
+    left: 20%;
+    z-index: 1;
+    background-color: black;
+    border-radius: 5px;
+    padding: 3px 8px;
+    cursor: pointer;
+    border: 1px solid rgba(0, 255, 255, 0.465) ;
+}
+.qty span:hover{
+    background-color: rgb(32, 128, 128) ;
+    color: black;
+    font-weight: 700;
+    border: 1px ridge rgba(0, 0, 0, 0.609);
+}
+.show-case>aside{
+    width: 100%;
+    height: 70%;
+    /* background-color: aquamarine; */
+    position: absolute;
+    top: 10%;
+}
+aside>h1{
+    margin-left: 10%;
+    color: rgba(0, 255, 255, 0.465) ;
+    margin-top: 10%;
+    font-size: 40px;
+    font-weight: bold;
+    font-family: cursive;
+}
